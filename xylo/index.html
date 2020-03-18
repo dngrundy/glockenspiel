@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+      <script>
+  function play(button){
+  	   var buttonId = button.id;
+       var audio = document.getElementById(buttonId + 'sound'); 
+       audio.play();
+                 }
+   </script>
+  </head>
+  <body>
+<img src="bkg.png" class="entry-feature-image" alt="Glockenspiel/Xylophone" usemap="#my_image" style="margin-top:0;">
+<audio id="area1sound">
+    <source src="C.mp3" type="audio/mpeg" />
+</audio>
+<audio id="area2sound">
+    <source src="D.mp3" type="audio/mpeg" />
+</audio>
+<audio id="area3sound">
+    <source src="E.mp3" type="audio/mpeg" />
+</audio>
+<audio id="area4sound">
+    <source src="G.mp3" type="audio/mpeg" />
+</audio>
+<map name="my_image" id ="my_image">
+<area shape="rect" coords="69,323,190,823" id="area1" value="PLAY"  onclick="play(this)" />
+<area shape="rect" coords="207,325,324,803" id="area2" value="PLAY"  onclick="play(this)" />
+<area shape="rect" coords="346,325,463,793" id="area3" value="PLAY"  onclick="play(this)" />
+<area shape="rect" coords="619,325,740,774" id="area4" value="PLAY"  onclick="play(this)" />
+</map>
+  </body>
+</html>
